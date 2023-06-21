@@ -10,7 +10,7 @@ body {
 .project1, .project2, .project3, .project4 {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     filter: grayscale(100%);    
-    transition: transform 0.5s ease-in-out, filter 0.25s ease-in-out; /* Combine transitions */
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out; /* Combine transitions */
 }
 
 .project1:hover, .project2:hover, .project3:hover, .project4:hover {
@@ -49,8 +49,33 @@ body {
 }
 
 .title, .bio {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+button {
+    font-size: medium;
+    color: white;
+    border-radius: 5px;
+    background-color: #f95959;
+    width: 15vmin;
+    margin-left: 5vw;
+	font-weight: bold;
+	padding: 10px;
+    border: none;
+	box-shadow: 0 2px 4px darkslategray;
+    transition: all 0.3s ease;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+	box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+    transition: all 0.3s ease;
 }
 
 .title {
@@ -58,12 +83,15 @@ body {
 }
 
 #image {
-    margin-left: 20vw;
+    position: absolute;
+    top: 10vw;
+    right: 45vw;
     background-image: url("./images/me.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
+    border: 5px solid #f95959; 
     height: 15vh;
     width: 15vh;
     transition: transform 0.5s ease-in-out;
@@ -91,10 +119,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    height: calc(42.5vw * 9 / 16);
-    width: 42.5vw;
+    height: calc(35vw * 9 / 16);
+    width: 35vw;
     top: 105vh;
-    left: 5vw;
+    left: 10vw;
 }
 
 .project2 {
@@ -103,10 +131,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    height: calc(42.5vw * 9 / 16);
-    width: 42.5vw;
+    height: calc(35vw * 9 / 16);
+    width: 35vw;
     top: 105vh;
-    right: 5vw;
+    right: 10vw;
 }
 
 .project3 {
@@ -115,10 +143,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    height: calc(42.5vw * 9 / 16);
-    width: 42.5vw;
-    top: calc(105vh + 27vw); /* Adjusted top position */
-    left: 5vw;
+    height: calc(35vw * 9 / 16);
+    width: 35vw;
+    top: calc(105vh + 25vw); /* Adjusted top position */
+    left: 10vw;
 }
 
 .project4 {
@@ -127,15 +155,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    height: calc(42.5vw * 9 / 16);
-    width: 42.5vw;
-    top: calc(105vh + 27vw); /* Adjusted top position */
-    right: 5vw;
+    height: calc(35vw * 9 / 16);
+    width: 35vw;
+    top: calc(105vh + 25vw); /* Adjusted top position */
+    right: 10vw;
 }
 
 .profile {
     font-size: larger;
-    color: white;
+    color: #233142;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -143,12 +171,13 @@ body {
 }
 
 li {
+    font-size: larger;
+    font-weight: bold;
+    line-height: 400%;
     list-style: none;
 }
 
 #name {
-    font-size: 2.5rem;
     color: #f95959;
-    width: 100vw;
     height: calc((42.5vw * 9 / 16) + 5vh);
   }
