@@ -51,10 +51,11 @@ body {
 .title, .bio {
     margin-left: 5vw;
     margin-right: 5vw;
+    font-size: 2vw;
 }
 
 button {
-    font-size: medium;
+    font-size: 1vw;
     color: white;
     border-radius: 5px;
     background-color: #f95959;
@@ -84,7 +85,7 @@ button:active {
 
 #image {
     position: absolute;
-    top: 10vw;
+    top: 15vh;
     right: 45vw;
     background-image: url("./images/me.jpg");
     background-position: center;
@@ -171,7 +172,7 @@ button:active {
 }
 
 li {
-    font-size: larger;
+    font-size: 1.5vw;
     font-weight: bold;
     line-height: 400%;
     list-style: none;
