@@ -102,7 +102,7 @@ button:active {
 #image:hover {
     background-image: url("./images/github-white.png");
     transition: 0.5s ease-in-out;
-    transform: rotatey(360deg) scale(0.75);
+    transform: rotateY(360deg) scale(0.75);
 }
 
 .profile {
