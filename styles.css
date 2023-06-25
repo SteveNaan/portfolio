@@ -7,6 +7,11 @@ body {
     background-color: #e3e3e3;
 }
 
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+
 .project1, .project2, .project3, .project4 {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     filter: grayscale(100%);    
@@ -14,8 +19,9 @@ body {
 }
 
 .project1:hover, .project2:hover, .project3:hover, .project4:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     filter: grayscale(0%);    
+    cursor: pointer;
 }
 
 .intro {
@@ -54,6 +60,7 @@ body {
 
 button:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 button:active {
@@ -66,7 +73,7 @@ button:active {
     margin-bottom: 5vw;
 }
 
-#image {
+/* #image {
     position: absolute;
     top: 5vh;
     left: 25vw;
@@ -86,7 +93,7 @@ button:active {
     background-image: url("./images/github-white.png");
     transition: 0.5s ease-in-out;
     transform: rotateY(360deg) scale(0.75);
-}
+} */
 
 .profile {
     background-color: #f95959;
@@ -159,10 +166,13 @@ li {
     font-weight: bold;
     line-height: 300%;
     list-style: none;
+    transition: transform 0.3s ease-in-out;
 }
 
 li:hover {
     color: white;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 #name {
